@@ -1,0 +1,135 @@
+{
+  "updated_at": "2026-03-02 16:25:38",
+  "days": [
+    {
+      "date": "2026-03-02",
+      "bookings": [
+        {
+          "court_id": 2,
+          "start_time": 15,
+          "end_time": 17
+        },
+        {
+          "court_id": 2,
+          "start_time": 17,
+          "end_time": 19
+        },
+        {
+          "court_id": 3,
+          "start_time": 21,
+          "end_time": 22
+        },
+        {
+          "court_id": 4,
+          "start_time": 9,
+          "end_time": 11
+        },
+        {
+          "court_id": 4,
+          "start_time": 19,
+          "end_time": 21
+        },
+        {
+          "court_id": 5,
+          "start_time": 14,
+          "end_time": 15
+        }
+      ]
+    },
+    {
+      "date": "2026-03-03",
+      "bookings": [
+        {
+          "court_id": 1,
+          "start_time": 10,
+          "end_time": 11
+        },
+        {
+          "court_id": 3,
+          "start_time": 15,
+          "end_time": 16
+        },
+        {
+          "court_id": 4,
+          "start_time": 16,
+          "end_time": 17
+        },
+        {
+          "court_id": 4,
+          "start_time": 21,
+          "end_time": 22
+        },
+        {
+          "court_id": 5,
+          "start_time": 14,
+          "end_time": 16
+        }
+      ]
+    },
+    {
+      "date": "2026-03-04",
+      "bookings": [
+        {
+          "court_id": 2,
+          "start_time": 15,
+          "end_time": 16
+        },
+        {
+          "court_id": 3,
+          "start_time": 18,
+          "end_time": 19
+        }
+      ]
+    },
+    {
+      "date": "2026-03-05",
+      "bookings": [
+        {
+          "court_id": 1,
+          "start_time": 9,
+          "end_time": 10
+        },
+        {
+          "court_id": 2,
+          "start_time": 15,
+          "end_time": 17
+        },
+        {
+          "court_id": 5,
+          "start_time": 15,
+          "end_time": 17
+        }
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "bookings": [
+        {
+          "court_id": 2,
+          "start_time": 19,
+          "end_time": 20
+        },
+        {
+          "court_id": 4,
+          "start_time": 10,
+          "end_time": 12
+        },
+        {
+          "court_id": 4,
+          "start_time": 16,
+          "end_time": 17
+        }
+      ]
+    },
+    {
+      "date": "2026-03-10",
+      "bookings": [
+        {
+          "court_id": 1,
+          "start_time": 10,
+          "end_time": 11
+        }
+      ]
+    }
+  ]
+}
