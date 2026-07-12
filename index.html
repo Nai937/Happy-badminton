@@ -363,6 +363,17 @@
     .op-table td:first-child { color: var(--text-m); width: 48%; }
     .op-table td:last-child  { color: var(--purple); font-family: 'Kanit', sans-serif; font-weight: 600; }
 
+    .op-group-block { margin-bottom: 16px; }
+    .op-group-block:last-child { margin-bottom: 0; }
+    .op-group-name {
+        font-family: 'Kanit', sans-serif; font-size: 14px; font-weight: 700;
+        color: var(--text); margin-bottom: 6px;
+    }
+    .op-group-note {
+        font-size: 11.5px; color: var(--text-dim); font-style: italic; margin-top: 6px;
+    }
+    .op-empty { font-size: 13px; color: var(--text-dim); text-align: center; padding: 18px 0; }
+
     /* Open badge */
     .open-badge {
         display: inline-flex; align-items: center; gap: 6px;
@@ -531,17 +542,10 @@
 <main class="wrap">
 
     <!-- ─── Slideshow ─── -->
-    <div class="slideshow-wrap" id="slideshow"
+    <div class="slideshow-wrap" id="slideshow" style="display:none"
          onmouseenter="slidePause()" onmouseleave="slideResume()">
 
-        <div class="slide active"><img src="showpic/show1.jpg" alt="บรรยากาศสนาม 1" loading="eager"></div>
-        <div class="slide"><img src="showpic/show2.jpg" alt="บรรยากาศสนาม 2" loading="lazy"></div>
-        <div class="slide"><img src="showpic/show3.jpg" alt="บรรยากาศสนาม 3" loading="lazy"></div>
-        <div class="slide"><img src="showpic/show4.jpg" alt="บรรยากาศสนาม 4" loading="lazy"></div>
-        <div class="slide"><img src="showpic/show5.jfif" alt="บรรยากาศสนาม 5" loading="lazy"></div>
-        <div class="slide"><img src="showpic/show6.jfif" alt="บรรยากาศสนาม 6" loading="lazy"></div>
-        <div class="slide"><img src="showpic/show7.jfif" alt="บรรยากาศสนาม 7" loading="lazy"></div>
-        <div class="slide"><img src="showpic/show8.jfif" alt="บรรยากาศสนาม 8" loading="lazy"></div>
+        <div id="slide-track"></div>
 
         <button class="slide-arrow prev" onclick="slideGo(slideCur-1)">
             <i class="fas fa-chevron-left"></i>
@@ -719,13 +723,15 @@
                         <i class="fas fa-tools" style="color:#1d4ed8"></i>
                         <span><strong style="color:#1d4ed8">บริการขึ้นเอ็นไม้แบดมินตัน</strong></span>
                     </li>
-                    <li><i class="fas fa-bottle-water"  style="color:#0369a1"></i>น้ำดื่ม, ขนม และสินค้าอื่นๆ (คิดเงินแยก)</li>
+                    <li><i class="fas fa-bottle-water"  style="color:#0369a1"></i>น้ำดื่ม, ขนม และสินค้าอื่นๆ</li>
+                    <li><i class="fas fa-bag-shopping"  style="color:#7c3aed"></i>บริการจำหน่ายอุปกรณ์กีฬา</li>
                 </ul>
                 <div class="stag-row">
                     <span class="stag"><i class="fas fa-check"></i>เช่าไม้</span>
                     <span class="stag"><i class="fas fa-check"></i>เช่ารองเท้า</span>
                     <span class="stag"><i class="fas fa-check"></i>ขึ้นเอ็น</span>
                     <span class="stag"><i class="fas fa-check"></i>น้ำดื่ม</span>
+                    <span class="stag"><i class="fas fa-check"></i>อุปกรณ์กีฬา</span>
                 </div>
             </div>
 
@@ -735,30 +741,15 @@
                     <div class="ic-icon ii-purple"><i class="fas fa-people-group"></i></div>
                     <div>
                         <div class="ic-title">จอยก๊วน (Open Play)</div>
-                        <div class="ic-sub">เปิดรับผู้เล่นทั่วไป 2 สนาม</div>
+                        <div class="ic-sub">เงื่อนไขและราคาอาจแตกต่างกันในแต่ละก๊วน</div>
                     </div>
                 </div>
-                <div class="open-badge"><div class="dot"></div> เปิดรับผู้เล่นทุกระดับ</div>
-                <table class="op-table">
-                    <tr>
-                        <td><i class="fas fa-calendar-day" style="color:#7c3aed;margin-right:7px"></i>อังคาร, พุธ</td>
-                        <td>20:00 – 24:00 น.</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-calendar-day" style="color:#7c3aed;margin-right:7px"></i>ศุกร์, เสาร์</td>
-                        <td>20:00 – 24:00 น.</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-calendar-day" style="color:#7c3aed;margin-right:7px"></i>อาทิตย์</td>
-                        <td>10:00 – 13:00 น.</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-calendar-day" style="color:#7c3aed;margin-right:7px"></i>อาทิตย์</td>
-                        <td>19:00 – 24:00 น.</td>
-                    </tr>
-                </table>
+                <div class="open-badge"><div class="dot"></div> เปิดรับผู้เล่นทั่วไป</div>
+                <div id="openplay-container">
+                    <p class="op-empty">กำลังโหลดข้อมูลก๊วน...</p>
+                </div>
                 <p style="font-size:11.5px;color:var(--text-dim);margin-top:10px">
-                    * คอร์ทที่เปิดจอยก๊วนอาจเปลี่ยนแปลงได้ตามวัน
+                    * วัน เวลา คอร์ท และราคาของแต่ละก๊วนอาจเปลี่ยนแปลงได้ กรุณาตรวจสอบก่อนเข้าร่วม
                 </p>
             </div>
 
@@ -772,9 +763,15 @@
                     </div>
                 </div>
                 <ul class="ilist">
-                    <li><i class="fas fa-mobile-alt"     style="color:#0f766e"></i>จองผ่าน <strong>Line</strong> — กรุณาแนบสลิปทุกครั้ง</li>
-                    <li><i class="fas fa-money-bill-wave" style="color:#15803d"></i>ชำระ <strong style="color:#15803d">เต็มจำนวน</strong> เมื่อทำการจอง</li>
-                    <li><i class="fas fa-ban"             style="color:#dc2626"></i><strong style="color:#dc2626">ไม่รับการเลื่อนเวลา</strong>ทุกกรณี</li>
+                    <li>
+                        <i class="fa-brands fa-line" style="color:#06C755"></i>
+                        <span>
+                            จองผ่าน <strong>LINE ID: @happy555</strong><br>
+                            <span style="font-size:12px;color:var(--text-dim)">กรุณาแนบสลิปการโอนทุกครั้ง</span>
+                        </span>
+                    </li>
+                    <li><i class="fas fa-money-bill-wave" style="color:#15803d"></i>ชำระค่าชั่วโมง <strong style="color:#15803d">เต็มจำนวน</strong> เมื่อทำการจอง</li>
+                    <li><i class="fas fa-comment-dots"    style="color:#0369a1"></i>หากต้องการ<strong>ยกเลิก หรือ แก้ไขเวลา</strong> ติดต่อสนามผ่านไลน์</li>
                     <li><i class="fas fa-receipt"         style="color:#0f766e"></i>ชำระ ณ จุดบริการก่อนออกจากสนาม</li>
                     <li><i class="fas fa-circle-xmark"    style="color:#dc2626"></i>ขอสงวนสิทธิ์ <strong style="color:#dc2626">คืนเงินทุกกรณี</strong></li>
                 </ul>
@@ -790,10 +787,10 @@
                     </div>
                 </div>
                 <ul class="ilist">
-                    <li><i class="fas fa-circle-check" style="color:#15803d"></i>สวมรองเท้าผ้าใบออกกำลังกาย หรือ <strong>No-Marking</strong> เท่านั้น</li>
+                    <li><i class="fas fa-circle-check" style="color:#15803d"></i>สวมรองเท้าผ้าใบ หรือ รองเท้าออกกำลังกาย <strong>(indoor)</strong> เท่านั้น</li>
                     <li><i class="fas fa-circle-check" style="color:#15803d"></i>รักษาความสะอาดภายในสนาม</li>
                     <li><i class="fas fa-circle-check" style="color:#15803d"></i>ไม่รบกวนผู้ใช้บริการท่านอื่น</li>
-                    <li><i class="fas fa-circle-check" style="color:#15803d"></i>สิ้นสุดเวลา กรุณาออกจากสนามทันที</li>
+                    <li><i class="fas fa-circle-check" style="color:#15803d"></i>คืนพื้นที่เมื่อสิ้นสุดเวลาการจอง เพื่อให้สนามพร้อมบริการสำหรับผู้ใช้งานท่านถัดไป</li>
                 </ul>
             </div>
 
@@ -808,11 +805,9 @@
         </div>
         <div class="notice-grid">
             <div class="nitem"><i class="fas fa-circle-exclamation"></i>ชำระเต็มจำนวนทันทีเมื่อทำการจอง</div>
-            <div class="nitem"><i class="fas fa-circle-exclamation"></i>ไม่รับการยกเลิกหรือเลื่อนเวลา ทุกกรณี</div>
+            <div class="nitem"><i class="fas fa-circle-exclamation"></i>หากต้องการยกเลิก หรือ แก้ไขเวลา ติดต่อสนามผ่านไลน์</div>
             <div class="nitem"><i class="fas fa-circle-exclamation"></i>ชำระ ณ จุดบริการก่อนออกจากสนาม</div>
-            <div class="nitem"><i class="fas fa-circle-exclamation"></i>สิ้นสุดเวลา กรุณาออกจากสนามทันที</div>
-            <div class="nitem"><i class="fas fa-circle-exclamation"></i>รักษาความสะอาด ไม่รบกวนผู้อื่น</div>
-            <div class="nitem"><i class="fas fa-circle-exclamation"></i>สินค้าเพิ่มเติม (น้ำดื่ม/ขนม) คิดเงินแยก</div>
+            <div class="nitem"><i class="fas fa-circle-exclamation"></i>รักษาความสะอาดภายในสนาม</div>
         </div>
     </div>
 
@@ -835,42 +830,60 @@
 const DATA_URL = './data/bookings.json';
 const COURTS   = [1,2,3,4,5];
 const START_H  = 8, END_H = 24, PEAK_S = 18, PEAK_E = 21;
-const OPEN_PLAY = {
-    2:[[20,24]], 3:[[20,24]], 5:[[20,24]], 6:[[20,24]],
-    0:[[10,13],[19,24]]
-};
+let OPEN_PLAY_DATA = [];   // loaded from ./data/open_play.json
+
+function escapeHtml(s) {
+    return String(s ?? '').replace(/[&<>"']/g, m => ({
+        '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'
+    }[m]));
+}
 
 /* ── Slideshow ── */
-(function(){
-    const slides  = document.querySelectorAll('#slideshow .slide');
+window.slideCur = 0;
+let slideTimer;
+
+window.slideGo = function(idx) {
+    const slides = document.querySelectorAll('#slideshow .slide');
+    const dots   = document.querySelectorAll('#slide-dots .slide-dot');
+    const total  = slides.length;
+    if (total === 0) return;
+    slides[slideCur].classList.remove('active');
+    dots[slideCur].classList.remove('active');
+    slideCur = ((idx % total) + total) % total;
+    slides[slideCur].classList.add('active');
+    dots[slideCur].classList.add('active');
+};
+window.slidePause = () => clearInterval(slideTimer);
+window.slideResume = () => {
+    clearInterval(slideTimer);
+    const total = document.querySelectorAll('#slideshow .slide').length;
+    if (total <= 1) return;
+    slideTimer = setInterval(() => slideGo(slideCur + 1), 4500);
+};
+
+async function initSlideshow() {
+    const wrap     = document.getElementById('slideshow');
+    const track    = document.getElementById('slide-track');
     const dotsWrap = document.getElementById('slide-dots');
-    const total   = slides.length;
-    window.slideCur = 0;
-    let slideTimer;
+    try {
+        const r = await fetch('./data/showpics.json?t=' + Date.now());
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        const files = await r.json();
+        if (!Array.isArray(files) || files.length === 0) throw new Error('no images');
 
-    // Build dots
-    for (let i = 0; i < total; i++) {
-        const d = document.createElement('button');
-        d.className = 'slide-dot' + (i === 0 ? ' active' : '');
-        d.onclick = () => { slideGo(i); slideResume(); };
-        dotsWrap.appendChild(d);
+        track.innerHTML = files.map((f, i) =>
+            `<div class="slide${i === 0 ? ' active' : ''}"><img src="showpic/${encodeURIComponent(f)}" alt="บรรยากาศสนาม ${i + 1}" loading="${i === 0 ? 'eager' : 'lazy'}"></div>`
+        ).join('');
+        dotsWrap.innerHTML = files.map((_, i) =>
+            `<button class="slide-dot${i === 0 ? ' active' : ''}" onclick="slideGo(${i});slideResume();"></button>`
+        ).join('');
+        slideCur = 0;
+        wrap.style.display = '';
+        slideResume();
+    } catch (e) {
+        wrap.style.display = 'none';
     }
-
-    window.slideGo = function(idx) {
-        const dots = dotsWrap.querySelectorAll('.slide-dot');
-        slides[slideCur].classList.remove('active');
-        dots[slideCur].classList.remove('active');
-        slideCur = ((idx % total) + total) % total;
-        slides[slideCur].classList.add('active');
-        dots[slideCur].classList.add('active');
-    };
-    window.slidePause  = () => clearInterval(slideTimer);
-    window.slideResume = () => {
-        clearInterval(slideTimer);
-        slideTimer = setInterval(() => slideGo(slideCur + 1), 4500);
-    };
-    slideResume();
-})();
+}
 
 const TH_DAYS   = ['อาทิตย์','จันทร์','อังคาร','พุธ','พฤหัสบดี','ศุกร์','เสาร์'];
 const TH_MONTHS = ['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน',
@@ -973,10 +986,47 @@ async function loadData() {
     renderGrid();
 }
 
+/* ── Open Play ── */
+async function loadOpenPlay() {
+    try {
+        const r = await fetch('./data/open_play.json?t=' + Date.now());
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        const data = await r.json();
+        OPEN_PLAY_DATA = Array.isArray(data) ? data : [];
+    } catch (e) {
+        OPEN_PLAY_DATA = [];
+    }
+    renderOpenPlayCard();
+    renderGrid();
+}
+
+function renderOpenPlayCard() {
+    const con = document.getElementById('openplay-container');
+    if (!con) return;
+    if (OPEN_PLAY_DATA.length === 0) {
+        con.innerHTML = `<p class="op-empty">ยังไม่มีก๊วนเปิดขณะนี้ ติดตามข่าวสารก๊วนได้ทาง LINE</p>`;
+        return;
+    }
+    con.innerHTML = OPEN_PLAY_DATA.map(g => {
+        const daysStr = [...g.days].sort().map(d => TH_DAYS[d]).join(', ');
+        const timeStr = `${String(g.start_time).padStart(2,'0')}:00 – ${String(g.end_time).padStart(2,'0')}:00 น.`;
+        let rows = `<tr><td><i class="fas fa-calendar-day" style="color:#7c3aed;margin-right:7px"></i>${escapeHtml(daysStr)}</td><td>${timeStr}</td></tr>`;
+        rows += `<tr><td><i class="fas fa-table-tennis-paddle-ball" style="color:#7c3aed;margin-right:7px"></i>คอร์ท</td><td>${g.courts.join(', ')}</td></tr>`;
+        if (g.price_text) rows += `<tr><td><i class="fas fa-tag" style="color:#7c3aed;margin-right:7px"></i>ราคา</td><td>${escapeHtml(g.price_text)}</td></tr>`;
+        if (g.level_text) rows += `<tr><td><i class="fas fa-medal" style="color:#7c3aed;margin-right:7px"></i>ระดับมือ</td><td>${escapeHtml(g.level_text)}</td></tr>`;
+        return `<div class="op-group-block">
+            <div class="op-group-name">${escapeHtml(g.name)}</div>
+            <table class="op-table">${rows}</table>
+            ${g.note_text ? `<p class="op-group-note">${escapeHtml(g.note_text)}</p>` : ''}
+        </div>`;
+    }).join('');
+}
+
 /* ── Grid ── */
-function isOpenPlay(dow, h) {
-    const s = OPEN_PLAY[dow];
-    return s && s.some(([a,b]) => h >= a && h < b);
+function isOpenPlay(court, dow, h) {
+    return OPEN_PLAY_DATA.some(g =>
+        g.courts.includes(court) && g.days.includes(dow) && h >= g.start_time && h < g.end_time
+    );
 }
 function renderGrid() {
     const con = document.getElementById('grid-container');
@@ -1014,7 +1064,7 @@ function renderGrid() {
         html += `<tr><td class="td-court">🏸 คอร์ท ${c}</td>`;
         hours.forEach(h => {
             const isB = bk[c][h], pk = h >= PEAK_S && h < PEAK_E;
-            const isO = !isB && (c === 1 || c === 2) && isOpenPlay(dow, h);
+            const isO = !isB && isOpenPlay(c, dow, h);
             let cls, cont;
             if      (isB)  { cls = pk ? 'ac ac-pbk'  : 'ac ac-book';  cont = '<i class="fas fa-lock" style="font-size:10px"></i>'; }
             else if (isO)  { cls = 'ac ac-open';  cont = 'OPEN'; }
@@ -1031,6 +1081,8 @@ function renderGrid() {
 
 /* ── Init ── */
 refreshDisplay();
+initSlideshow();
+loadOpenPlay();
 loadData();
 setInterval(loadData, 5 * 60 * 1000);
 </script>
