@@ -1,4 +1,15 @@
 {
-  "updated_at": "2026-07-15 02:38:07",
-  "days": []
+  "updated_at": "2026-07-15 15:35:49",
+  "days": [
+    {
+      "date": "2026-07-15",
+      "bookings": [
+        {
+          "court_id": 2,
+          "start_time": 20,
+          "end_time": 23
+        }
+      ]
+    }
+  ]
 }
