@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-28 10:32:28",
+  "updated_at": "2026-07-28 10:52:16",
   "days": [
     {
       "date": "2026-07-28",
@@ -98,6 +98,76 @@
           "court_id": 5,
           "start_time": 16,
           "end_time": 20
+        }
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "bookings": [
+        {
+          "court_id": 4,
+          "start_time": 17,
+          "end_time": 18
+        },
+        {
+          "court_id": 5,
+          "start_time": 9,
+          "end_time": 12
+        },
+        {
+          "court_id": 5,
+          "start_time": 14,
+          "end_time": 20
+        }
+      ]
+    },
+    {
+      "date": "2026-07-30",
+      "bookings": [
+        {
+          "court_id": 3,
+          "start_time": 18,
+          "end_time": 19
+        },
+        {
+          "court_id": 4,
+          "start_time": 18,
+          "end_time": 20
+        },
+        {
+          "court_id": 5,
+          "start_time": 9,
+          "end_time": 11
+        },
+        {
+          "court_id": 5,
+          "start_time": 14,
+          "end_time": 20
+        },
+        {
+          "court_id": 5,
+          "start_time": 21,
+          "end_time": 22
+        }
+      ]
+    },
+    {
+      "date": "2026-07-31",
+      "bookings": [
+        {
+          "court_id": 4,
+          "start_time": 17,
+          "end_time": 19
+        },
+        {
+          "court_id": 5,
+          "start_time": 10,
+          "end_time": 11
+        },
+        {
+          "court_id": 5,
+          "start_time": 14,
+          "end_time": 19
         }
       ]
     },
