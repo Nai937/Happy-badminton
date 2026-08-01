@@ -4,8 +4,7 @@
     "name": "ก๊วนแฮปปี้",
     "days": [
       3,
-      5,
-      6
+      5
     ],
     "start_time": 20,
     "end_time": 24,
@@ -19,6 +18,26 @@
     "is_active": 1,
     "sort_order": 0,
     "created_at": "2026-07-29 15:50:34",
-    "updated_at": "2026-07-29 15:55:05"
+    "updated_at": "2026-08-01 19:37:12"
+  },
+  {
+    "id": 5,
+    "name": "ฟันน้ำนม",
+    "days": [
+      6
+    ],
+    "start_time": 20,
+    "end_time": 24,
+    "courts": [
+      2,
+      3
+    ],
+    "price_text": "ค่าบุฟเฟต์ 50 บาท + ค่าลูก 25บาท/ลูก",
+    "level_text": "BG/มือใหม่ ขึ้นไป",
+    "note_text": "",
+    "is_active": 1,
+    "sort_order": 1,
+    "created_at": "2026-08-01 19:38:12",
+    "updated_at": "2026-08-01 19:38:12"
   }
 ]
