@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12 13:07:20",
+  "updated_at": "2026-08-12 13:12:01",
   "days": [
     {
       "date": "2026-08-12",
@@ -131,7 +131,7 @@
         },
         {
           "court_id": 5,
-          "start_time": 9,
+          "start_time": 10,
           "end_time": 12
         },
         {
@@ -291,6 +291,11 @@
       "bookings": [
         {
           "court_id": 1,
+          "start_time": 10,
+          "end_time": 11
+        },
+        {
+          "court_id": 1,
           "start_time": 14,
           "end_time": 15
         },
@@ -313,6 +318,11 @@
           "court_id": 1,
           "start_time": 20,
           "end_time": 22
+        },
+        {
+          "court_id": 2,
+          "start_time": 13,
+          "end_time": 15
         },
         {
           "court_id": 2,
