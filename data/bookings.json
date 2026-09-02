@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02 14:54:52",
+  "updated_at": "2026-09-02 15:02:47",
   "days": [
     {
       "date": "2026-09-02",
@@ -613,6 +613,16 @@
           "court_id": 3,
           "start_time": 17,
           "end_time": 20
+        },
+        {
+          "court_id": 3,
+          "start_time": 20,
+          "end_time": 22
+        },
+        {
+          "court_id": 4,
+          "start_time": 20,
+          "end_time": 22
         }
       ]
     },
@@ -793,6 +803,11 @@
           "court_id": 3,
           "start_time": 17,
           "end_time": 20
+        },
+        {
+          "court_id": 3,
+          "start_time": 20,
+          "end_time": 22
         }
       ]
     },
@@ -973,6 +988,11 @@
           "court_id": 3,
           "start_time": 17,
           "end_time": 20
+        },
+        {
+          "court_id": 3,
+          "start_time": 20,
+          "end_time": 22
         }
       ]
     },
