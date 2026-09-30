@@ -1,436 +1,26 @@
 {
-  "updated_at": "2026-09-25 19:58:56",
+  "updated_at": "2026-09-30 21:51:12",
   "days": [
-    {
-      "date": "2026-09-25",
-      "bookings": [
-        {
-          "court_id": 1,
-          "start_time": 16,
-          "end_time": 17
-        },
-        {
-          "court_id": 1,
-          "start_time": 17,
-          "end_time": 19
-        },
-        {
-          "court_id": 1,
-          "start_time": 19,
-          "end_time": 20
-        },
-        {
-          "court_id": 1,
-          "start_time": 20,
-          "end_time": 21
-        },
-        {
-          "court_id": 1,
-          "start_time": 21,
-          "end_time": 22
-        },
-        {
-          "court_id": 1,
-          "start_time": 22,
-          "end_time": 24
-        },
-        {
-          "court_id": 2,
-          "start_time": 16,
-          "end_time": 17
-        },
-        {
-          "court_id": 2,
-          "start_time": 17,
-          "end_time": 18
-        },
-        {
-          "court_id": 2,
-          "start_time": 18,
-          "end_time": 20
-        },
-        {
-          "court_id": 2,
-          "start_time": 20,
-          "end_time": 24
-        },
-        {
-          "court_id": 3,
-          "start_time": 16,
-          "end_time": 17
-        },
-        {
-          "court_id": 3,
-          "start_time": 17,
-          "end_time": 20
-        },
-        {
-          "court_id": 3,
-          "start_time": 20,
-          "end_time": 24
-        },
-        {
-          "court_id": 4,
-          "start_time": 16,
-          "end_time": 17
-        },
-        {
-          "court_id": 4,
-          "start_time": 17,
-          "end_time": 19
-        },
-        {
-          "court_id": 4,
-          "start_time": 19,
-          "end_time": 21
-        },
-        {
-          "court_id": 4,
-          "start_time": 21,
-          "end_time": 23
-        },
-        {
-          "court_id": 5,
-          "start_time": 10,
-          "end_time": 12
-        },
-        {
-          "court_id": 5,
-          "start_time": 14,
-          "end_time": 16
-        },
-        {
-          "court_id": 5,
-          "start_time": 16,
-          "end_time": 20
-        },
-        {
-          "court_id": 5,
-          "start_time": 20,
-          "end_time": 21
-        },
-        {
-          "court_id": 5,
-          "start_time": 21,
-          "end_time": 23
-        }
-      ]
-    },
-    {
-      "date": "2026-09-26",
-      "bookings": [
-        {
-          "court_id": 1,
-          "start_time": 10,
-          "end_time": 11
-        },
-        {
-          "court_id": 1,
-          "start_time": 13,
-          "end_time": 15
-        },
-        {
-          "court_id": 1,
-          "start_time": 16,
-          "end_time": 18
-        },
-        {
-          "court_id": 1,
-          "start_time": 18,
-          "end_time": 19
-        },
-        {
-          "court_id": 1,
-          "start_time": 19,
-          "end_time": 20
-        },
-        {
-          "court_id": 1,
-          "start_time": 20,
-          "end_time": 22
-        },
-        {
-          "court_id": 2,
-          "start_time": 9,
-          "end_time": 11
-        },
-        {
-          "court_id": 2,
-          "start_time": 13,
-          "end_time": 15
-        },
-        {
-          "court_id": 2,
-          "start_time": 16,
-          "end_time": 18
-        },
-        {
-          "court_id": 2,
-          "start_time": 18,
-          "end_time": 20
-        },
-        {
-          "court_id": 2,
-          "start_time": 20,
-          "end_time": 22
-        },
-        {
-          "court_id": 3,
-          "start_time": 9,
-          "end_time": 10
-        },
-        {
-          "court_id": 3,
-          "start_time": 10,
-          "end_time": 12
-        },
-        {
-          "court_id": 3,
-          "start_time": 13,
-          "end_time": 15
-        },
-        {
-          "court_id": 3,
-          "start_time": 15,
-          "end_time": 17
-        },
-        {
-          "court_id": 3,
-          "start_time": 17,
-          "end_time": 20
-        },
-        {
-          "court_id": 3,
-          "start_time": 20,
-          "end_time": 22
-        },
-        {
-          "court_id": 4,
-          "start_time": 13,
-          "end_time": 16
-        },
-        {
-          "court_id": 4,
-          "start_time": 16,
-          "end_time": 18
-        },
-        {
-          "court_id": 4,
-          "start_time": 18,
-          "end_time": 20
-        },
-        {
-          "court_id": 4,
-          "start_time": 20,
-          "end_time": 22
-        },
-        {
-          "court_id": 5,
-          "start_time": 9,
-          "end_time": 10
-        },
-        {
-          "court_id": 5,
-          "start_time": 10,
-          "end_time": 12
-        },
-        {
-          "court_id": 5,
-          "start_time": 13,
-          "end_time": 21
-        },
-        {
-          "court_id": 5,
-          "start_time": 21,
-          "end_time": 23
-        }
-      ]
-    },
-    {
-      "date": "2026-09-27",
-      "bookings": [
-        {
-          "court_id": 1,
-          "start_time": 9,
-          "end_time": 10
-        },
-        {
-          "court_id": 1,
-          "start_time": 13,
-          "end_time": 15
-        },
-        {
-          "court_id": 1,
-          "start_time": 15,
-          "end_time": 16
-        },
-        {
-          "court_id": 1,
-          "start_time": 16,
-          "end_time": 18
-        },
-        {
-          "court_id": 1,
-          "start_time": 18,
-          "end_time": 19
-        },
-        {
-          "court_id": 2,
-          "start_time": 10,
-          "end_time": 14
-        },
-        {
-          "court_id": 2,
-          "start_time": 14,
-          "end_time": 16
-        },
-        {
-          "court_id": 2,
-          "start_time": 16,
-          "end_time": 18
-        },
-        {
-          "court_id": 2,
-          "start_time": 18,
-          "end_time": 20
-        },
-        {
-          "court_id": 3,
-          "start_time": 15,
-          "end_time": 16
-        },
-        {
-          "court_id": 3,
-          "start_time": 16,
-          "end_time": 18
-        },
-        {
-          "court_id": 3,
-          "start_time": 18,
-          "end_time": 20
-        },
-        {
-          "court_id": 4,
-          "start_time": 13,
-          "end_time": 14
-        },
-        {
-          "court_id": 4,
-          "start_time": 15,
-          "end_time": 20
-        },
-        {
-          "court_id": 5,
-          "start_time": 13,
-          "end_time": 21
-        }
-      ]
-    },
-    {
-      "date": "2026-09-28",
-      "bookings": [
-        {
-          "court_id": 1,
-          "start_time": 18,
-          "end_time": 20
-        },
-        {
-          "court_id": 1,
-          "start_time": 20,
-          "end_time": 22
-        },
-        {
-          "court_id": 2,
-          "start_time": 17,
-          "end_time": 18
-        },
-        {
-          "court_id": 2,
-          "start_time": 18,
-          "end_time": 20
-        },
-        {
-          "court_id": 2,
-          "start_time": 20,
-          "end_time": 22
-        },
-        {
-          "court_id": 3,
-          "start_time": 17,
-          "end_time": 19
-        },
-        {
-          "court_id": 3,
-          "start_time": 19,
-          "end_time": 21
-        },
-        {
-          "court_id": 3,
-          "start_time": 21,
-          "end_time": 22
-        },
-        {
-          "court_id": 4,
-          "start_time": 18,
-          "end_time": 19
-        },
-        {
-          "court_id": 4,
-          "start_time": 19,
-          "end_time": 21
-        },
-        {
-          "court_id": 5,
-          "start_time": 17,
-          "end_time": 19
-        },
-        {
-          "court_id": 5,
-          "start_time": 19,
-          "end_time": 21
-        }
-      ]
-    },
-    {
-      "date": "2026-09-29",
-      "bookings": [
-        {
-          "court_id": 1,
-          "start_time": 17,
-          "end_time": 18
-        },
-        {
-          "court_id": 1,
-          "start_time": 18,
-          "end_time": 19
-        },
-        {
-          "court_id": 2,
-          "start_time": 17,
-          "end_time": 19
-        },
-        {
-          "court_id": 2,
-          "start_time": 19,
-          "end_time": 20
-        },
-        {
-          "court_id": 3,
-          "start_time": 17,
-          "end_time": 20
-        },
-        {
-          "court_id": 3,
-          "start_time": 20,
-          "end_time": 22
-        }
-      ]
-    },
     {
       "date": "2026-09-30",
       "bookings": [
         {
           "court_id": 1,
+          "start_time": 9,
+          "end_time": 10
+        },
+        {
+          "court_id": 1,
+          "start_time": 10,
+          "end_time": 11
+        },
+        {
+          "court_id": 1,
+          "start_time": 15,
+          "end_time": 17
+        },
+        {
+          "court_id": 1,
           "start_time": 17,
           "end_time": 20
         },
@@ -438,6 +28,21 @@
           "court_id": 1,
           "start_time": 20,
           "end_time": 22
+        },
+        {
+          "court_id": 1,
+          "start_time": 22,
+          "end_time": 23
+        },
+        {
+          "court_id": 2,
+          "start_time": 9,
+          "end_time": 10
+        },
+        {
+          "court_id": 2,
+          "start_time": 17,
+          "end_time": 18
         },
         {
           "court_id": 2,
@@ -448,6 +53,26 @@
           "court_id": 2,
           "start_time": 20,
           "end_time": 21
+        },
+        {
+          "court_id": 2,
+          "start_time": 21,
+          "end_time": 22
+        },
+        {
+          "court_id": 2,
+          "start_time": 22,
+          "end_time": 23
+        },
+        {
+          "court_id": 3,
+          "start_time": 13,
+          "end_time": 14
+        },
+        {
+          "court_id": 3,
+          "start_time": 14,
+          "end_time": 15
         },
         {
           "court_id": 3,
@@ -466,23 +91,63 @@
         },
         {
           "court_id": 4,
+          "start_time": 13,
+          "end_time": 14
+        },
+        {
+          "court_id": 4,
+          "start_time": 17,
+          "end_time": 18
+        },
+        {
+          "court_id": 4,
+          "start_time": 18,
+          "end_time": 19
+        },
+        {
+          "court_id": 4,
           "start_time": 19,
           "end_time": 21
         },
         {
           "court_id": 4,
           "start_time": 21,
+          "end_time": 23
+        },
+        {
+          "court_id": 4,
+          "start_time": 23,
           "end_time": 24
         },
         {
           "court_id": 5,
-          "start_time": 9,
-          "end_time": 11
+          "start_time": 11,
+          "end_time": 12
+        },
+        {
+          "court_id": 5,
+          "start_time": 13,
+          "end_time": 14
+        },
+        {
+          "court_id": 5,
+          "start_time": 14,
+          "end_time": 19
+        },
+        {
+          "court_id": 5,
+          "start_time": 19,
+          "end_time": 20
         },
         {
           "court_id": 5,
           "start_time": 20,
           "end_time": 21
+        },
+        {
+          "court_id": 5,
+          "start_time": 21,
+          "end_time": 23
         }
       ]
     },
@@ -491,6 +156,11 @@
       "bookings": [
         {
           "court_id": 1,
+          "start_time": 16,
+          "end_time": 17
+        },
+        {
+          "court_id": 1,
           "start_time": 17,
           "end_time": 18
         },
@@ -506,6 +176,11 @@
         },
         {
           "court_id": 2,
+          "start_time": 15,
+          "end_time": 17
+        },
+        {
+          "court_id": 2,
           "start_time": 17,
           "end_time": 19
         },
@@ -516,8 +191,23 @@
         },
         {
           "court_id": 3,
+          "start_time": 18,
+          "end_time": 19
+        },
+        {
+          "court_id": 3,
           "start_time": 19,
           "end_time": 21
+        },
+        {
+          "court_id": 3,
+          "start_time": 21,
+          "end_time": 22
+        },
+        {
+          "court_id": 4,
+          "start_time": 16,
+          "end_time": 20
         },
         {
           "court_id": 4,
@@ -531,8 +221,28 @@
         },
         {
           "court_id": 5,
+          "start_time": 9,
+          "end_time": 11
+        },
+        {
+          "court_id": 5,
+          "start_time": 14,
+          "end_time": 15
+        },
+        {
+          "court_id": 5,
+          "start_time": 16,
+          "end_time": 20
+        },
+        {
+          "court_id": 5,
           "start_time": 20,
           "end_time": 22
+        },
+        {
+          "court_id": 5,
+          "start_time": 22,
+          "end_time": 23
         }
       ]
     },
@@ -550,15 +260,95 @@
           "end_time": 19
         },
         {
+          "court_id": 1,
+          "start_time": 19,
+          "end_time": 21
+        },
+        {
           "court_id": 2,
           "start_time": 16,
           "end_time": 17
+        },
+        {
+          "court_id": 2,
+          "start_time": 17,
+          "end_time": 18
+        },
+        {
+          "court_id": 2,
+          "start_time": 18,
+          "end_time": 20
+        },
+        {
+          "court_id": 2,
+          "start_time": 20,
+          "end_time": 24
+        },
+        {
+          "court_id": 3,
+          "start_time": 15,
+          "end_time": 17
+        },
+        {
+          "court_id": 3,
+          "start_time": 17,
+          "end_time": 20
+        },
+        {
+          "court_id": 3,
+          "start_time": 20,
+          "end_time": 24
+        },
+        {
+          "court_id": 4,
+          "start_time": 15,
+          "end_time": 17
+        },
+        {
+          "court_id": 4,
+          "start_time": 17,
+          "end_time": 19
+        },
+        {
+          "court_id": 4,
+          "start_time": 19,
+          "end_time": 21
+        },
+        {
+          "court_id": 4,
+          "start_time": 21,
+          "end_time": 24
+        },
+        {
+          "court_id": 5,
+          "start_time": 10,
+          "end_time": 12
+        },
+        {
+          "court_id": 5,
+          "start_time": 14,
+          "end_time": 20
+        },
+        {
+          "court_id": 5,
+          "start_time": 20,
+          "end_time": 21
+        },
+        {
+          "court_id": 5,
+          "start_time": 21,
+          "end_time": 22
         }
       ]
     },
     {
       "date": "2026-10-03",
       "bookings": [
+        {
+          "court_id": 1,
+          "start_time": 14,
+          "end_time": 16
+        },
         {
           "court_id": 1,
           "start_time": 16,
@@ -570,15 +360,80 @@
           "end_time": 20
         },
         {
+          "court_id": 1,
+          "start_time": 20,
+          "end_time": 22
+        },
+        {
           "court_id": 2,
           "start_time": 16,
           "end_time": 18
+        },
+        {
+          "court_id": 2,
+          "start_time": 18,
+          "end_time": 20
+        },
+        {
+          "court_id": 2,
+          "start_time": 20,
+          "end_time": 22
+        },
+        {
+          "court_id": 3,
+          "start_time": 13,
+          "end_time": 15
+        },
+        {
+          "court_id": 3,
+          "start_time": 15,
+          "end_time": 17
+        },
+        {
+          "court_id": 3,
+          "start_time": 17,
+          "end_time": 20
+        },
+        {
+          "court_id": 3,
+          "start_time": 20,
+          "end_time": 22
+        },
+        {
+          "court_id": 4,
+          "start_time": 13,
+          "end_time": 16
+        },
+        {
+          "court_id": 4,
+          "start_time": 18,
+          "end_time": 20
+        },
+        {
+          "court_id": 4,
+          "start_time": 20,
+          "end_time": 22
+        },
+        {
+          "court_id": 5,
+          "start_time": 11,
+          "end_time": 12
+        },
+        {
+          "court_id": 5,
+          "start_time": 13,
+          "end_time": 21
         }
       ]
     },
     {
       "date": "2026-10-04",
       "bookings": [
+        {
+          "court_id": 1,
+          "start_time": 14,
+          "end_time": 16
+        },
         {
           "court_id": 1,
           "start_time": 16,
@@ -591,8 +446,68 @@
         },
         {
           "court_id": 2,
+          "start_time": 14,
+          "end_time": 16
+        },
+        {
+          "court_id": 2,
           "start_time": 16,
           "end_time": 18
+        },
+        {
+          "court_id": 2,
+          "start_time": 18,
+          "end_time": 20
+        },
+        {
+          "court_id": 3,
+          "start_time": 15,
+          "end_time": 17
+        },
+        {
+          "court_id": 3,
+          "start_time": 18,
+          "end_time": 20
+        },
+        {
+          "court_id": 4,
+          "start_time": 9,
+          "end_time": 10
+        },
+        {
+          "court_id": 4,
+          "start_time": 15,
+          "end_time": 17
+        },
+        {
+          "court_id": 5,
+          "start_time": 9,
+          "end_time": 12
+        },
+        {
+          "court_id": 5,
+          "start_time": 13,
+          "end_time": 21
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "bookings": [
+        {
+          "court_id": 3,
+          "start_time": 17,
+          "end_time": 18
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "bookings": [
+        {
+          "court_id": 1,
+          "start_time": 19,
+          "end_time": 21
         }
       ]
     },
@@ -642,6 +557,31 @@
       ]
     },
     {
+      "date": "2026-10-09",
+      "bookings": [
+        {
+          "court_id": 2,
+          "start_time": 18,
+          "end_time": 20
+        },
+        {
+          "court_id": 3,
+          "start_time": 17,
+          "end_time": 20
+        },
+        {
+          "court_id": 4,
+          "start_time": 19,
+          "end_time": 21
+        },
+        {
+          "court_id": 5,
+          "start_time": 20,
+          "end_time": 21
+        }
+      ]
+    },
+    {
       "date": "2026-10-15",
       "bookings": [
         {
@@ -683,6 +623,31 @@
           "court_id": 5,
           "start_time": 20,
           "end_time": 22
+        }
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "bookings": [
+        {
+          "court_id": 2,
+          "start_time": 18,
+          "end_time": 20
+        },
+        {
+          "court_id": 3,
+          "start_time": 17,
+          "end_time": 20
+        },
+        {
+          "court_id": 4,
+          "start_time": 19,
+          "end_time": 21
+        },
+        {
+          "court_id": 5,
+          "start_time": 20,
+          "end_time": 21
         }
       ]
     },
@@ -732,6 +697,31 @@
       ]
     },
     {
+      "date": "2026-10-23",
+      "bookings": [
+        {
+          "court_id": 2,
+          "start_time": 18,
+          "end_time": 20
+        },
+        {
+          "court_id": 3,
+          "start_time": 17,
+          "end_time": 20
+        },
+        {
+          "court_id": 4,
+          "start_time": 19,
+          "end_time": 21
+        },
+        {
+          "court_id": 5,
+          "start_time": 20,
+          "end_time": 21
+        }
+      ]
+    },
+    {
       "date": "2026-10-29",
       "bookings": [
         {
@@ -773,6 +763,31 @@
           "court_id": 5,
           "start_time": 20,
           "end_time": 22
+        }
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "bookings": [
+        {
+          "court_id": 2,
+          "start_time": 18,
+          "end_time": 20
+        },
+        {
+          "court_id": 3,
+          "start_time": 17,
+          "end_time": 20
+        },
+        {
+          "court_id": 4,
+          "start_time": 19,
+          "end_time": 21
+        },
+        {
+          "court_id": 5,
+          "start_time": 20,
+          "end_time": 21
         }
       ]
     }
