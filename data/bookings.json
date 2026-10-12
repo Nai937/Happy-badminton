@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12 16:21:18",
+  "updated_at": "2026-10-12 16:22:12",
   "days": [
     {
       "date": "2026-10-12",
@@ -104,6 +104,11 @@
     {
       "date": "2026-10-13",
       "bookings": [
+        {
+          "court_id": 1,
+          "start_time": 13,
+          "end_time": 15
+        },
         {
           "court_id": 1,
           "start_time": 16,
