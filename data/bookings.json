@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28 12:33:27",
+  "updated_at": "2026-10-28 12:36:07",
   "days": [
     {
       "date": "2026-10-28",
@@ -318,6 +318,11 @@
           "court_id": 4,
           "start_time": 20,
           "end_time": 22
+        },
+        {
+          "court_id": 4,
+          "start_time": 22,
+          "end_time": 23
         },
         {
           "court_id": 5,
